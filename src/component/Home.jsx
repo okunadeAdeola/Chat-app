@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/Styles/pages.css'
 import section1Img from '../assets/image/section1.jpg'
-import section2Img from '../assets/image/section2.jpg'
+import section2Img from '../assets/image/section8.jpg'
 import section3Img from '../assets/image/section3.jpg'
 import section4Img from '../assets/image/section4.jpg'
-
+import section5Img from '../assets/image/section7.jpg'
 const Home = () => {
   return (
     <>
@@ -46,7 +46,7 @@ const Home = () => {
 
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col-reverse" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:h-hf sm:w-full '>
-          <img src={section2Img} alt="" className='w-full h-full ' />
+          <img src={section5Img} alt="" className='w-full h-full ' />
         </div>
         <div className='w-hf sm:w-full sm:h-hf flex mt-[-4em] items-center border-blue-50'>
           <div className='ms-[10%]'>
@@ -61,8 +61,8 @@ const Home = () => {
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col border-b-8 border-white sm:border-4" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:w-full sm:h-hf flex items-center border-4 border-sky-300'>
           <div className='ms-[10%]'>
-            <h1 className='text-[2.8em] text-bold border-blue-700 text-blue-800 rounded-[5px]'>Pay Bills</h1>
-            <p className='mt-3 text-lg text-blue-600 w-[70%] '>Buy airtime, data and others telecom service at a very affordable price. This also includes electricity bill and TV subscriptions.</p>
+            <h1 className='text-[2.8em] text-bold border-blue-700 text-blue-800 rounded-[5px]'>Stay Connected, Stay Powered!</h1>
+            <p className='mt-3 text-lg text-blue-600 w-[70%] '> Quick, simple, and budget-friendly—so you can get back to chatting.</p>
           </div>
         </div>
         <div className='w-hf sm:h-hf sm:w-full '>
@@ -74,12 +74,12 @@ const Home = () => {
 
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col-reverse" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:h-hf sm:w-full '>
-          <img src={section4Img} alt="" className='w-full h-full ' />
+          <img src={section2Img} alt="" className='w-full h-full ' />
         </div>
         <div className='w-hf sm:w-full sm:h-hf flex mt-[-4em] items-center border-blue-50'>
           <div className='ms-[10%]'>
-            <h1 className='text-[2.8em] text-bold border-blue-700 text-blue-800 rounded-[5px]'>Save & Earn</h1>
-            <p className='mt-3 text-lg text-blue-600 w-[70%] '>Make your money secure. Save your money with Adey Square pay and withdraw anytime anyday. Very Secure & Fast</p>
+            <h1 className='text-[2.8em] text-bold border-blue-700 text-blue-800 rounded-[5px]'>Save & Secured</h1>
+            <p className='mt-3 text-lg text-blue-600 w-[70%] '>Make your chat secure. Register with Adey Square chat app and you won't the decision anytime anyday. Very Secure & Fast</p>
           </div>
         </div>
       </div>
