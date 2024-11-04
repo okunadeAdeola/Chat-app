@@ -1,0 +1,119 @@
+
+
+td{
+    padding: 7px;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+#adminAddDataPlan h1{
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(2, 2, 119);
+}
+
+#adminAddDataPlan select{
+    display: block;
+    width: 100%;
+    height: 2.4em;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 2px solid rgb(2, 2, 56) !important;
+}
+
+#adminAddDataPlan input{
+    display: block;
+    border: 2px solid rgb(2, 2, 56);
+    width: 100%;
+    height: 2.4em;
+    border-radius: 7px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#adminAddDataPlan input:focus, #adminAddDataPlan select:focus{
+    border: 2px solid rgb(83, 83, 245);
+    outline: none;
+}
+
+#adminAddDataPlan input::placeholder{
+    color: rgb(79, 79, 187) !important;
+}
+
+#adminAddDataPlan label{
+    font-weight: 500;
+    color: rgb(1, 1, 17);
+    padding-top: 100px;
+}
+
+#adminAddDataPlan button{
+    width: 50%;
+    background-color: rgb(67, 67, 243);
+    margin-left: 25%;
+    height: 2.3em;
+    border-radius: 50px;
+    margin-top: 9px;
+}
+
+#adminAddDataPlan > :nth-child(2){
+    margin-top: 5px;
+}
+
+.listOfPlansDiv{
+    overflow-y: scroll;
+}
+
+#listOfPlans h1{
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    background-color: rgb(248, 219, 219);
+    text-align: center;
+    padding: 3px;
+    border-radius: 7px;
+    font-weight: 400;
+}
+
+#listOfPlans table{
+    width: 100%;
+}
+
+#listOfPlans table, #listOfPlans table td, #listOfPlans table th{
+    border: 2px solid rgb(250, 219, 219);
+}
+
+.allUser{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.allUser table{
+    width: 98%;
+    margin-top: 20px;
+    margin-left: 1%;
+}
+
+.allUser table button{
+    width: 6em;
+    background-color: blue;
+    height: 2em;
+    border-radius: 7px;
+    color: aliceblue;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 478px) {
+    .allUser table{
+        display: block;
+        
+    }
+    .allUser table td{
+        padding: 10px !important;
+    }
+}

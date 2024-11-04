@@ -1,0 +1,51 @@
+#profileDropDown{
+    display: none;
+}
+
+#resetEmail:focus {
+    border: 2px red solid;
+    outline: none;
+}
+
+.transaccountNo, .transAmount, transaccountNo::placeholder, .transAmount::placeholder {
+    color: blue !important;
+}
+
+.spinner2 {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    padding: 1.1px;
+    background: conic-gradient(#0000 10%,#474bff) content-box;
+    -webkit-mask: repeating-conic-gradient(#0000 0deg,#000 1deg 20deg,#0000 21deg 36deg),
+         radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 calc(100% - 9px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: spinner-d55elj 1s infinite steps(10);
+ }
+ 
+ @keyframes spinner-d55elj {
+    to {
+       transform: rotate(1turn);
+    }
+ }
+
+.homePage{
+    font-weight: 600;
+    font-size: 1.35em;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 480px) {
+    .homePage{
+        font-size: 0.8em;
+    }
+    #sidebar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+        /* display: none; */
+    }
+}
