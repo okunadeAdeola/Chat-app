@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
-// const baseUrl = 'https://chat-app-backend-seuk.onrender.com';
-const baseUrl = "http://localhost:3002";
+const baseUrl = 'https://chat-backend-4uuv.onrender.com';
+// const baseUrl = "http://localhost:3002";
 
 const Dashboard = () => {
   const token = localStorage.getItem('userToken');

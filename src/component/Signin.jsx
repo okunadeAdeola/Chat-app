@@ -10,8 +10,8 @@ import { BsEyeSlashFill } from "react-icons/bs";
 import { useNavigate, Link } from 'react-router-dom';
 
 
-// const baseUrl = "https://chat-app-backend-seuk.onrender.com"
-const baseUrl = "http://localhost:3002"
+const baseUrl = "https://chat-backend-4uuv.onrender.com"
+// const baseUrl = "http://localhost:3002"
 
 
 const Signin = () => {

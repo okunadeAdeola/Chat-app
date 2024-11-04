@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import axios from 'axios';
 
-// const baseUrl = "https://chat-app-backend-seuk.onrender.com"
-const baseUrl = "http://localhost:3002"
+const baseUrl = "https://chat-backend-4uuv.onrender.com"
+// const baseUrl = "http://localhost:3002"
 
 
 const Chat = () => {
