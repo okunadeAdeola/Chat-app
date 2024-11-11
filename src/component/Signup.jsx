@@ -22,14 +22,13 @@ const Signup = () => {
     const togglePasswordVisibility = () => {
         setPasswordVisible(!passwordVisible);
     };
-
     const navigate = useNavigate()
     const validationSchema = yup.object({
         username: yup.string().required("Username is required"),
         email: yup.string().email('Invalid email format').required("Email is required"),
         password: yup.string()
-        .required('Password is required').matches(/[a-z]/, 'Password must contain at least one lowercase')
-        .matches(/[A-Z]/, 'Password must contain at least one uppercase')
+        .required('Password is required').matches(/[a-z]/, 'Password require at least one lowercase')
+        .matches(/[A-Z]/, 'Password require at least one uppercase')
         .matches(/[0-9]/, 'Password must contain at least number').min(8, 'Password must be at least 8 characters long').max(15, 'Password must not be longer 15 characters')
         .matches(/[!@#$%^&*(),.?":{}|<>]/, 'Password require special character')
     });
@@ -58,8 +57,8 @@ const Signup = () => {
                 if (err.response) {
                     const { status, data } = err.response;
                     if (status === 409) {
-                        setError(data.message || 'Duplicate user found');
-                        toast.error(data.message || 'Duplicate user found');
+                        setError(data.message || 'Duplicate user found' || 'username already in use');
+                        toast.error(data.message || 'Duplicate user found' || 'username already in use');
                     } else if (status === 400) {
                         setError(data.message || 'Please fill in all fields correctly');
                         toast.error(data.message || 'Please fill in all fields correctly');
