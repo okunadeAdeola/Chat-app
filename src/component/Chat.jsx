@@ -174,7 +174,7 @@ const Chat = () => {
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 placeholder="Type a message"
-                                className="w-[330px] p-2 border border-gray-300 rounded"
+                                className="w-[300px] p-2 border border-gray-300 rounded"
                             />
                             <button
                                 type="submit"
