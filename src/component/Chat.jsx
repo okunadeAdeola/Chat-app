@@ -160,7 +160,7 @@ const Chat = () => {
                                         key={index}
                                         className={`flex ${msg.senderId === userId ? 'justify-end' : 'justify-start'} p-2`}
                                     >
-                                        <div className={`p-2 rounded ${msg.senderId === userId ? 'bg-green-200 text-blue-800' : 'bg-gray-500 text-white-800'}`}>
+                                        <div className={`p-2 rounded ${msg.senderId === userId ? 'bg-green-200 text-blue-800' : 'bg-gray-200 text-white-800'}`}>
                                             <strong>{msg.senderId === userId ? 'You' : selectedUser.username}:</strong> {msg.content}
                                             <em className="text-sm text-gray-500">{msg.timestamp ? new Date(msg.timestamp).toLocaleTimeString() : <span>{time}</span>}</em>
                                         </div>
