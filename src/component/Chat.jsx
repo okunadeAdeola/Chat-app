@@ -112,11 +112,11 @@ const Chat = () => {
         setSelectedUser(user);
         localStorage.setItem('lastChattedUserId', user._id);
         fetchMessages(user._id);
-        setIsChatting(true); // Show chat view
+        setIsChatting(true);
     };
 
     const handleBack = () => {
-        setIsChatting(false); // Show user list again
+        setIsChatting(false); 
         setSelectedUser(null);
     };
 
@@ -124,7 +124,7 @@ const Chat = () => {
         <div className='background'>
             <div className="flex flex-col md:flex-row h-screen">
                 {!isChatting ? (
-                    // User list view
+                   
                     <div className="md:w-1/4 w-full p-4 border-b md:border-b-0 md:border-r border-gray-300 overflow-y-auto">
                         <h2 className="text-xl font-bold mb-4 text-gray-900 bg-gray-100 border-t rounded-sm p-1 border-gray-300">Users</h2>
                         <div className="space-y-2">
@@ -134,8 +134,8 @@ const Chat = () => {
                                     className="p-2 cursor-pointer hover:bg-gray-200 rounded bg-gray-100 bg-opacity-50"
                                     onClick={() => handleUserClick(item)}
                                 >
-                                    {item.username}
-                                    <span className={`ml-2 ${item.online ? 'text-green-500' : 'text-red-500'}`}>
+                                    <span className='font-bold'>{item.username}</span>
+                                    <span className={`ml-2 ${item.online ? 'text-green-500 font-bold' : 'text-red-800 font-bold'}`}>
                                         ({item.online ? 'Online' : 'Offline'})
                                     </span>
                                 </div>
@@ -143,7 +143,7 @@ const Chat = () => {
                         </div>
                     </div>
                 ) : (
-                    // Chat view
+                   
                     <div className="flex-1 flex flex-col bg-opacity-80 overflow-y-auto">
                         <div className="flex items-center p-4 bg-gray-100 border-b border-gray-300 sticky top-0 z-100">
                             <button onClick={handleBack} className="mr-4 text-blue-500 hover:text-blue-700">

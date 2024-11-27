@@ -83,7 +83,7 @@ const Signup = () => {
                 <div>Already had an account? <span className='text-pink-600 font-bold'><Link to='/signin'>Signin now</Link></span></div>
                 <form onSubmit={formik.handleSubmit}>
                     <div className="h-[80px] my-3">
-                        <label htmlFor="username" className="font-semibold my-1">Username</label><br />
+                        <label htmlFor="username" className="font-semibold my-1 capitalize">Username</label><br />
                         <input
                             type="text"
                             placeholder="Jane"

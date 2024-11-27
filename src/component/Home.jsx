@@ -4,7 +4,6 @@ import '../assets/Styles/pages.css'
 import section1Img from '../assets/image/section1.jpg'
 import section2Img from '../assets/image/section8.jpg'
 import section3Img from '../assets/image/section3.jpg'
-import section4Img from '../assets/image/section4.jpg'
 import section5Img from '../assets/image/section7.jpg'
 const Home = () => {
   return (
@@ -17,15 +16,12 @@ const Home = () => {
           <li className='h-full flex items-center justify-center'>
             <Link className='bg-white h-[50%] w-28 sm:w-20 sm:h-[45%] sm:text-[0.8em] rounded-3xl text-blue-700 flex items-center justify-center ' to='/signin'>Login</Link>
           </li>
-
           <li className='flex gap-10 h-full items-center '>
             <Link className='bg-white h-[50%] w-28 sm:w-20 sm:h-[45%] sm:text-[0.8em] rounded-3xl text-blue-700 flex items-center justify-center ' to='/signup'>Register</Link>
           </li>
         </ul>
       </nav>
-
       {/* Section 1 */}
-
       <div className="section2 w-full h-[30em] bg-slate-100 flex border-b-8 border-slate-200 sm:flex-col" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:w-full sm:mt-10 sm:h-hf flex mt-[-2em] items-center'>
           <div className='ms-[10%]'>
@@ -41,9 +37,7 @@ const Home = () => {
           <img src={section1Img} alt="" className='w-full h-full ' />
         </div>
       </div>
-
       {/* Section  2*/}
-
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col-reverse" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:h-hf sm:w-full '>
           <img src={section5Img} alt="" className='w-full h-full ' />
@@ -55,9 +49,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       {/* Section  3*/}
-
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col border-b-8 border-white sm:border-4" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:w-full sm:h-hf flex items-center border-4 border-sky-300'>
           <div className='ms-[10%]'>
@@ -69,9 +61,7 @@ const Home = () => {
           <img src={section3Img} alt="" className='w-full h-full ' />
         </div>
       </div>
-
       {/* Section  4*/}
-
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col-reverse" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:h-hf sm:w-full '>
           <img src={section2Img} alt="" className='w-full h-full ' />
@@ -83,12 +73,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <footer style={{ fontFamily: '"Josefin Sans", sans-serif' }} className='bg-green-950 h-28 text-blue-50 flex items-center justify-center border-t-8'>
+      <footer style={{ fontFamily: '"Josefin Sans", sans-serif' }} className='bg-green-950 h-28 text-blue-50 flex items-center justify-center border-t-8 sticky bottom-0 z-200'>
         <p>Copy right, (Adey Square) 2024.</p>
       </footer>
     </>
   )
 }
-
 export default Home
