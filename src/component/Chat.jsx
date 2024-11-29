@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import axios from 'axios';
 import { BsSendFill } from "react-icons/bs";
+import { MdKeyboardVoice } from "react-icons/md";
+import { Link } from 'react-router-dom';
 const baseUrl = "https://chat-backend-4uuv.onrender.com";
 
 const Chat = () => {
@@ -126,7 +128,7 @@ const Chat = () => {
                 {!isChatting ? (
                    
                     <div className="md:w-1/4 w-full p-4 border-b md:border-b-0 md:border-r border-gray-300 overflow-y-auto">
-                        <h2 className="text-xl font-bold mb-4 text-gray-900 bg-gray-100 border-t rounded-sm p-1 border-gray-300">Users</h2>
+                        <h2 className="text-xl font-bold mb-4 text-gray-900 bg-gray-100 border-t rounded-sm p-1 border-gray-300">Users</h2> <button><Link to='/signin'>Log out</Link></button>
                         <div className="space-y-2">
                             {users.map((item, i) => (
                                 <div
@@ -180,7 +182,7 @@ const Chat = () => {
                                 type="submit"
                                 className="mt-2 px-4 py-4 bg-blue-500 text-white rounded hover:bg-blue-600 h-[44px]"
                             >
-                               <BsSendFill/>
+                        {message.trim() ? <BsSendFill /> : <MdKeyboardVoice />}
                             </button>
                         </form>
                     </div>

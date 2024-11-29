@@ -7,6 +7,8 @@ import Dashboard from './component/Dashboard'
 import Chat from './component/Chat'
 import Loader from './component/Loader'
 import Home from './component/Home'
+import Test from './component/Test'
+import Record from './component/Record'
 function App() {
   // const [verifiedIp, setverifiedIp] = useState(false)
 
@@ -43,6 +45,8 @@ function App() {
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/dashboard' element={ <Dashboard/>}/>
         <Route path="/chat/:username" element={<Chat />} />
+        <Route path='/record' element={<Record/>}/>
+        <Route path='/verify' element={<Test/>}/>
       </Routes>
         
     </div>
