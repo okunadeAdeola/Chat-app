@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/Styles/pages.css'
-import section1Img from '../assets/image/section1.jpg'
+import section1Img from '../assets/image/newLogo.jpg'
 import section2Img from '../assets/image/section8.jpg'
 import section3Img from '../assets/image/section3.jpg'
 import section5Img from '../assets/image/section7.jpg'
