@@ -27,10 +27,10 @@ const Signup = () => {
         username: yup.string().required("Username is required"),
         email: yup.string().email('Invalid email format').required("Email is required"),
         password: yup.string()
-        .required('Password is required').matches(/[a-z]/, 'Password require at least one lowercase')
-        .matches(/[A-Z]/, 'Password require at least one uppercase')
-        .matches(/[0-9]/, 'Password must contain at least number').min(8, 'Password must be at least 8 characters long').max(15, 'Password must not be longer 15 characters')
-        .matches(/[!@#$%^&*(),.?":{}|<>]/, 'Password require special character')
+        .required('Password is required').matches(/[a-z]/, 'Must include lowercase')
+        .matches(/[A-Z]/, 'Must include uppercase')
+        .matches(/[0-9]/, 'Must include at least number').min(8, 'Must include least 8 characters').max(15, 'Password is too long')
+        .matches(/[!@#$%^&*(),.?":{}|<>]/, 'Must include special character')
     });
 
     const formik = useFormik({
@@ -87,7 +87,7 @@ const Signup = () => {
                         <input
                             type="text"
                             placeholder="Jane"
-                            className="px-4 py-2 w-full border-2 mt-1 border-gray-800 focus:outline-red-800"
+                            className="px-4 py-2 w-full border-2 mt-1 border-gray-800  rounded-2xl"
                             name="username"
                             onBlur={formik.handleBlur}
                             onChange={formik.handleChange}
@@ -102,7 +102,7 @@ const Signup = () => {
                         <input
                             type="email"
                             placeholder="jane@gmail.com"
-                            className="px-4 py-2 w-full border-2 mt-1 border-gray-800 focus:outline-red-800"
+                            className="px-4 py-2 w-full border-2 mt-1 border-gray-800  rounded-2xl"
                             name="email"
                             onBlur={formik.handleBlur}
                             onChange={formik.handleChange}
@@ -117,7 +117,7 @@ const Signup = () => {
                         <input
                             type={passwordVisible ? 'text' : 'password'}
                             autoComplete="off"
-                            className="border-2 mt-1 border-gray-800 py-2 px-4 w-full focus:outline-red-800"
+                            className="border-2 mt-1 border-gray-800 py-2 px-4 w-full rounded-2xl"
                             name="password"
                             onBlur={formik.handleBlur}
                             onChange={formik.handleChange}
@@ -133,7 +133,7 @@ const Signup = () => {
                     <div className="flex items-center justify-between">
                         <button
                             type="submit"
-                            className="bg-green-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            className="bg-green-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
                             disabled={loading}
                         >
                             {loading ? <ClipLoader size={20} color='#ffffff' /> : "Sign Up"}

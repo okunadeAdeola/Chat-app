@@ -64,7 +64,6 @@ const Chat = () => {
                 setUsers(updatedUsers);
             }
         });
-
         return () => {
             socket.off('recievemessage');
             socket.off('getUsers');
@@ -133,7 +132,7 @@ const Chat = () => {
                             {users.map((item, i) => (
                                 <div
                                     key={i}
-                                    className="p-2 cursor-pointer hover:bg-gray-200 rounded bg-gray-100 bg-opacity-50"
+                                    className="p-2 cursor-pointer hover:bg-gray-200 rounded-2xl bg-gray-100 bg-opacity-50"
                                     onClick={() => handleUserClick(item)}
                                 >
                                     <span className='font-bold'>{item.username}</span>
@@ -144,8 +143,7 @@ const Chat = () => {
                             ))}
                         </div>
                     </div>
-                ) : (
-                   
+                ) : (                   
                     <div className="flex-1 flex flex-col bg-opacity-80 overflow-y-auto">
                         <div className="flex items-center p-4 bg-gray-100 border-b border-gray-300 sticky top-0 z-100">
                             <button onClick={handleBack} className="mr-4 text-blue-500 hover:text-blue-700">

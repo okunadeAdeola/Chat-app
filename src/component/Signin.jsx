@@ -84,7 +84,7 @@ const Signin = () => {
                         <input
                             type="email"
                             placeholder="jane@gmail.com"
-                            className="px-4 py-2 w-full border-2 mt-1 border-gray-800 focus:outline-red-800"
+                            className="px-4 py-2 w-full border-2 mt-1 border-gray-800  rounded-2xl"
                             name="email"
                             onBlur={formik.handleBlur}
                             onChange={formik.handleChange}
@@ -99,7 +99,7 @@ const Signin = () => {
                         <input
                             type={passwordVisible ? 'text' : 'password'}
                             autoComplete="off"
-                            className="border-2 mt-1 border-gray-800 py-2 px-4 w-full focus:outline-red-800"
+                            className="border-2 mt-1 border-gray-800 py-2 px-4 w-full  rounded-2xl"
                             name="password"
                             onBlur={formik.handleBlur}
                             onChange={formik.handleChange}
