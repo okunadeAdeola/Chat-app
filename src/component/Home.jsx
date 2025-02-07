@@ -53,7 +53,7 @@ const Home = () => {
       <div className="section2 w-full h-[30em] bg-white flex sm:flex-col border-b-8 border-white sm:border-4" style={{ fontFamily: '"Josefin Sans", sans-serif' }}>
         <div className='w-hf sm:w-full sm:h-hf flex items-center'>
           <div className='ms-[10%]'>
-            <h1 className='text-[2.8em] text-bold border-green-700 text-green-500 rounded-[5px]'>Stay Connected, Stay Powered!</h1>
+            <h1 className='text-[2.7em] text-bold border-green-700 text-green-500 rounded-[5px] mt-2'>Stay Connected, Stay Powered!</h1>
             <p className='mt-3 text-lg text-green-500 w-[70%] '> Quick, simple, and budget-friendly—so you can get back to chatting.</p>
           </div>
         </div>
