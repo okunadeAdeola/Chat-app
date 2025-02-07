@@ -73,7 +73,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <footer style={{ fontFamily: '"Josefin Sans", sans-serif' }} className='bg-green-950 h-28 text-blue-50 flex items-center justify-center border-t-8 sticky bottom-0 z-200'>
+      <footer style={{ fontFamily: '"Josefin Sans", sans-serif' }} className='bg-green-950 h-28 text-blue-50 flex items-center justify-center border-t-8'>
         <p>Copy right, (Adey Square) 2024.</p>
       </footer>
     </>
