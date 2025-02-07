@@ -14,10 +14,10 @@ const Home = () => {
         </div>
         <ul className='flex gap-10 sm:gap-5 h-full items-center '>
           <li className='h-full flex items-center justify-center'>
-            <Link className='bg-white h-[50%] w-28 sm:w-20 sm:h-[45%] sm:text-[0.8em] rounded-3xl text-blue-700 flex items-center justify-center ' to='/signin'>Login</Link>
+            <Link className='bg-white h-[50%] w-28 sm:w-20 sm:h-[45%] sm:text-[0.8em] rounded-3xl text-green-600 flex items-center justify-center ' to='/signin'>Login</Link>
           </li>
           <li className='flex gap-10 h-full items-center '>
-            <Link className='bg-white h-[50%] w-28 sm:w-20 sm:h-[45%] sm:text-[0.8em] rounded-3xl text-blue-700 flex items-center justify-center ' to='/signup'>Register</Link>
+            <Link className='bg-white h-[50%] w-28 sm:w-20 sm:h-[45%] sm:text-[0.8em] rounded-3xl text-green-600 flex items-center justify-center ' to='/signup'>Register</Link>
           </li>
         </ul>
       </nav>
