@@ -220,10 +220,10 @@ const Chat = () => {
                                 placeholder="Type a message"
                                 className="w-[280px] p-2 border border-gray-300 rounded"
                             />
-                            <input 
+                            {/* <input 
                                 type="file" 
                                 onChange={(e) => setFile(e.target.files[0])} 
-                            />
+                            /> */}
                             <button
                                 type="submit"
                                 className="mt-2 px-4 py-4 bg-blue-500 text-white rounded hover:bg-blue-600 h-[44px]"

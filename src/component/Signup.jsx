@@ -76,9 +76,12 @@ const Signup = () => {
     });
 
     return (
-        <div className="min-h-screen flex p-9 items-center justify-center bg-green-800">
+        <div className="min-h-screen flex p-9 items-center justify-center bg-green-700">
             <div className="bg-white p-8 text-gray-800 rounded-lg shadow-md w-full max-w-sm">
-                <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+                setTimeout(() ={
+                    
+                    <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+                }, 2000);
                 {error && <p className="text-red-800 text-center mb-4">{error}</p>}
                 <div>Already had an account? <span className='text-pink-600 font-bold'><Link to='/signin'>Signin now</Link></span></div>
                 <form onSubmit={formik.handleSubmit}>
@@ -133,7 +136,7 @@ const Signup = () => {
                     <div className="flex items-center justify-between">
                         <button
                             type="submit"
-                            className="bg-green-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
+                            className="bg-green-700 hover:bg-green-500 transition ease-in duration-700 text-white font-bold py-2 px-4 rounded-2xl focus:outline-none focus:shadow-outline"
                             disabled={loading}
                         >
                             {loading ? <ClipLoader size={20} color='#ffffff' /> : "Sign Up"}

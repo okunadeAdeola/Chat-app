@@ -65,7 +65,7 @@ const Signin = () => {
                 if (err.response && err.response.data) {
                     setError(err.response.data.message);
                     toast.error('Wrong password, please type the correct password');
-                } else {
+                } else { 
                     setError("Wrong email, please type the correct email");toast.error('Wrong password, please type the correct password');
                 }
             }
@@ -73,7 +73,7 @@ const Signin = () => {
     });
 
     return (
-        <div className="min-h-screen flex p-9 items-center justify-center bg-green-800">
+        <div className="min-h-screen flex p-9 items-center justify-center bg-green-700">
             <div className="bg-white p-8 text-gray-800 rounded-lg shadow-md w-full max-w-sm">
                 <h2 className="text-2xl text-gray-800 font-bold mb-6 text-center">Sign In</h2>
                 {error && <p className="text-red-500 text-center mb-4">{error}</p>}
@@ -115,7 +115,7 @@ const Signin = () => {
                     <div className="flex items-center justify-between">
                         <button
                             type="submit"
-                            className="bg-green-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                            className="bg-green-800 hover:bg-green-500 transition ease-out duration-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                             disabled={loading}
                         >
                             {loading ? <ClipLoader size={20} color='#ffffff' /> : "Sign In"}
