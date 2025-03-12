@@ -78,10 +78,10 @@ const Signup = () => {
     return (
         <div className="min-h-screen flex p-9 items-center justify-center bg-green-700">
             <div className="bg-white p-8 text-gray-800 rounded-lg shadow-md w-full max-w-sm">
-                setTimeout(() ={
+
                     
                     <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
-                }, 2000);
+            
                 {error && <p className="text-red-800 text-center mb-4">{error}</p>}
                 <div>Already had an account? <span className='text-pink-600 font-bold'><Link to='/signin'>Signin now</Link></span></div>
                 <form onSubmit={formik.handleSubmit}>
